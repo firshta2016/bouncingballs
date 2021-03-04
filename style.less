@@ -1,0 +1,121 @@
+@yellow: #efc369;
+@purple: #a494c0;
+@orange: #d7925f;
+@green: #b5bc67;
+@offBlack: #1d1f20;
+@lightBlue: #87cefa;
+
+body {
+  font-family: "Courier New";
+  color: @green;
+  background-color: @offBlack;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  margin: 10px 0px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+  color: @yellow;
+}
+h3 {
+  font-size: 21px;
+  color: @orange;
+}
+
+ol {
+  margin-left : 15px;
+}
+
+a {
+  color: @lightBlue;
+  text-decoration: none;
+  &:visited {
+    color: @lightBlue;
+  }
+  &:hover {
+    /*color : yellow;*/
+    text-decoration: underline;
+  }
+}
+
+.yellow {
+  color: @yellow;
+  /*font-weight: bold;*/
+}
+
+.purple {
+  color: @purple;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+strong {
+  font-weight: normal;
+  font-size: 105%;
+}
+
+.title {
+  line-height: 1.5;
+  margin-left: -3px;
+}
+
+button {
+  box-sizing: border-box;
+  font-family: "Courier New";
+  font-size: 16px;
+  color: @yellow;
+  border: 2px solid @orange;
+  background-color: @offBlack;
+  border-radius: 10px;
+  padding: 12px 16px;
+  outline: 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 0px;
+  cursor: default;
+  &:hover {
+    color: @orange;
+    border: 2px solid @yellow;
+    cursor: pointer;
+    background-color: black;
+  }
+  &:focus {
+    color: @yellow;
+    border: 2px solid @orange;
+    cursor: default;
+  }
+  &:active {
+    color: yellow;
+    border: 2px solid @yellow;
+    cursor: default;
+  }
+}
+
+pre {
+  box-sizing: border-box;
+  background-color: @offBlack;
+  padding: 10px;
+  border: 2px solid @yellow;
+  font-size: 16px;
+  min-height: 300px;
+  color: @yellow;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.sphere {
+  display: block;
+  background: black;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+}
